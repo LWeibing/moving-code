@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after{
+    box-sizing: border-box;
+}
+*::before{
+    box-sizing: border-box;
+}
+#html{
+    word-break: break-all;
+    line-height: 2em;
+    padding:10px 0 0 20px;
+}
+#div1Box{
+    position: fixed;
+    top:40%;
+    right: 25%;
+
+}
+#div1::before{
+    content: " ";
+    display: block;
+    position: absolute;
+}
+#div1::after{
+    content: " ";
+    display: block;
+    position: absolute;
+}
+@media (max-width:500px){
+    #div1Box{
+        position: relative;
+        top: 100px;
+       left:50%;
+       margin-left: -50px;
+    }
+    #html{
+        height: 50vh;
+        overflow: auto;
+    }
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
